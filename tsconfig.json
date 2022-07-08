@@ -1,0 +1,12 @@
+{
+    "include": ["src"], // ts -> js 변환을 위해 src 폴더를 전부 확인한다.
+    "compilerOptions": {
+        "outDir": "build", // js 파일이 생성될 경로,
+        "target": "ES6", // 변환될 JS 버전
+        "lib": ["ES5", "ES6", "DOM"], // js 코드가 어느 환경에서 동작할지 알려줌
+        // "strict": true, // 타입스크립트가 보호해줌,
+        "allowJs": true,
+        // "noImplicitAny": false, 
+        // ㄴ-> https://yamoo9.gitbook.io/typescript/types/function-union-void 암시적 any 오류 x
+    },
+}
